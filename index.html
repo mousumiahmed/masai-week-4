@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Weather Check</title>
+	
+	<style>
+		.container{
+			
+			height :900px;
+			width:1300px;
+			margin-left:0px;
+			border: 2px dotted black;
+			background-image: url("backgr.jpg");
+			color:white;
+		}
+		.header{
+			height:100px;
+			text-align: center;
+			margin-top:40px;
+			font-size: 35px;
+			color:white;
+			
+		}
+		.input_style{
+            margin-left: 320px;
+            margin-top:30px;
+            width: 400px;
+			height:30px;
+        }
+		button{
+			width:150px;
+			height:35px;
+		}
+
+
+
+		.display_box{
+			border: 1px dotted black;
+			height:400px;
+			width: 900px;
+			margin-left: 150px;
+			margin-top: 40px;
+			
+			color:white;
+		}
+		.result_head{
+
+			text-align:center;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			font-size: 30px;
+			border: 1px solid orange;
+ 			 border-radius: 10px;
+			  background-image: url("dis.jpg");
+			  color:blue;
+		}
+		.left_box{
+			
+			margin-left:20px;
+			font-style: italic;
+			
+			border-radius:20px;
+		}
+		
+		.right_box{
+
+			float:right;
+			margin-right: 60px;
+			margin-top: -200px;
+			font-size:15px;
+		}
+		.middle{
+			margin-left: 0px;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			font-style: italic;
+			font-stretch: expanded;
+			text-align: center;
+			
+			border-radius:20px;
+			margin-top:10px;
+			font-size: 25px;
+			color:white;
+
+			
+		}
+		
+	</style>
+</head>
+<body>
+<div class="container">
+		<div>
+			<h1 class="header">CHECK THE WEATHER FOR ANY CITY</h2>
+		</div>
+		<hr>
+		<div>
+
+		<input  type="text" name="search" class="input_style" id="name">
+		<button id="print_weather">Search</button> 
+		</div>
+		<div class="display_box">
+
+			<div id="place" class="result_head"></div>
+			<div class="left_box">
+			<div id="temp"></div>
+			<div id="temp1"></div>
+			<div id="temp2"></div>
+			<div id="temp3"></div>
+			
+		</div>
+		<div class="middle"><div id="temp5"></div>
+
+			<div class="right_box">
+				<div id="temp4"></div>
+				<div id="temp6"></div>
+
+				<div id="temp7"></div>
+			</div>
+
+			
+
+			
+		</div>
+	</div>
+
+	<script type="text/javascript" src="index.js">
+		
+	</script>
+</body>
+</html>
